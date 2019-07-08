@@ -1,6 +1,11 @@
+app-heroes {
+    width: 50%;
+    float: left;
+}
+
 .selected {
 	background-color: #CFD8DC !important;
-	color: white;
+	color: red;
   }
 
 .heroes {
