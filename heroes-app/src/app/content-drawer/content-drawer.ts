@@ -17,8 +17,4 @@ export class ContentDrawerComponent implements OnInit {
 	checkVar() {
         console.log('this goes from the content-drawer.ts ' + this.condition);
     }
-
-    onChanged(){
-        console.log(1);
-    }
 }

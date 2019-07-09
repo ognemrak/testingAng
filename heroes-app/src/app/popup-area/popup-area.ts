@@ -9,11 +9,12 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 export class PopupAreaComponent implements OnInit {
 	@Input() boolValue: boolean;
 	
-	@Output() onChanged = new EventEmitter<boolean>();
-    change(increased:any) {
-        this.onChanged.emit(increased);
-		// console.log(increased);
-    }
+	@Output() private numberGenerated = new EventEmitter<number>();
+
+	public generateNumber() {
+		const randomNumber = Math.random();
+		this.numberGenerated.emit(randomNumber);
+	}
 
 	constructor() {}
     ngOnInit() {}
