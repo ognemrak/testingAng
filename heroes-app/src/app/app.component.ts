@@ -7,12 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 	title = 'Tour of the heroes';
-	name:string="Tom";
-	age:number = 24;
-	condition:boolean = true;
-
-	changeCondition() {
-		this.condition = !this.condition;
-		console.log(this.condition);
-	}
+	heading = 'Heading of the holder section'
 }

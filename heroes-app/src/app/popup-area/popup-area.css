@@ -1,0 +1,11 @@
+.popup {
+    background-color: green;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+.btn-emiters {
+    background-color: #dac;
+}

@@ -1,13 +1,1 @@
-<h1>{{title}}</h1>
-<app-heroes style="width: 50%; float: left"></app-heroes>
-<div class="main-holder" style='width: 50%; float: left;'>
-    <div class="holder-box">
-        <h3>Some text</h3>
-    </div>
-    <button (click)="changeCondition()">Open popup</button>
-    <div class="popup-block" *ngIf='!condition'>
-        <button class="btn-close" (click)="changeCondition()">Close popup</button>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, magni.</p>
-    </div>
-    <testing-area [userName]="name" [userAge]="age" [boolean]='condition'></testing-area>
-</div>
+<content-drawer></content-drawer>
