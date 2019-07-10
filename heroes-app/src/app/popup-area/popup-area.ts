@@ -7,20 +7,19 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
  
 export class PopupAreaComponent implements OnInit {
-	@Input() boolValue: boolean;
+
+	@Output() valueChange = new EventEmitter();
+	counter = 0;
 	
-	@Output() private numberGenerated = new EventEmitter<number>();
-
-	public generateNumber() {
-		const randomNumber = Math.random();
-		this.numberGenerated.emit(randomNumber);
-	}
-
 	constructor() {}
-    ngOnInit() {}
-    
-    checkVar() {
-        console.log('this goes from the popup.ts ' + this.boolValue);
+
+    ngOnInit() {
 	}
-	
+
+
+	valueChanged() { // You can give any function name
+		this.counter = this.counter + 1;
+		console.log(this.counter);
+        this.valueChange.emit(this.counter);
+    }
 }

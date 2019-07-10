@@ -7,14 +7,14 @@ import { Component, OnInit, Input, Output } from '@angular/core';
 })
  
 export class ContentDrawerComponent implements OnInit {
-	condition:boolean= false;
+	myParentcout = 0;
 	
 	constructor() {}
 
 	ngOnInit() {
     }
-
-	checkVar() {
-        console.log('this goes from the content-drawer.ts ' + this.condition);
+	
+	displayCounter(count) {
+		this.myParentcout = count;
     }
 }

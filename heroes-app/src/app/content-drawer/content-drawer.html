@@ -1,5 +1,4 @@
 <div class="content-holder">
-    <popup-area [boolValue]="condition"></popup-area>
-    <testing-area [boolValue]="condition"></testing-area>
-    <button class="btn-check" (click)="checkVar()">Check the values</button>
+    <popup-area (valueChange)='displayCounter($event)'></popup-area>
+    <testing-area [test]="myParentcout"></testing-area>
 </div>
