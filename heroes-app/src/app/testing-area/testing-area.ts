@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output } from '@angular/core';
  
 @Component({
 	selector: 'testing-area',
@@ -7,24 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
  
 export class TestingAreaComponent implements OnInit {
-	name = 'Tom';
-	age = 25;
-	count: number=0;
-	booleanValue: false;
-    
-	constructor() { }
-
-	ngOnInit() {
+	@Input() test: number;
+	constructor(){}
+	ngOnInit(){
+		console.log(this.test);
 	}
-
-	increase() : void {
-		this.count++;
-		console.log(this.count);
-	}
-	
-	changeBoolean() {
-		this.booleanValue = !this.booleanValue;
-		console.log(this.booleanValue);
-	}
-
 }
