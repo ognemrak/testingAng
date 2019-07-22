@@ -7,7 +7,8 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { TestingAreaComponent } from './testing-area/testing-area';
 import { PopupAreaComponent } from './popup-area/popup-area'
-import { ContentDrawerComponent } from './content-drawer/content-drawer'
+import { ContentDrawerComponent } from './content-drawer/content-drawer';
+import { InfoCardsComponent } from './info-cards/info-cards.component'
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ContentDrawerComponent } from './content-drawer/content-drawer'
     HeroDetailComponent,
     TestingAreaComponent,
     PopupAreaComponent,
-    ContentDrawerComponent
+    ContentDrawerComponent,
+    InfoCardsComponent
   ],
   imports: [
     BrowserModule,
