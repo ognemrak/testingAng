@@ -1,2 +1,16 @@
-<app-info-cards></app-info-cards>
-<!-- <content-drawer></content-drawer> -->
+<div class="cards-holder">
+    <div class="card" *ngIf='result$ | async as user'>
+        <p>User ID - {{user.data.id}}</p>
+        <p>User nickname - {{user.data.name}}</p>
+        <p>Year of the execution - {{user.data.year}}</p>
+        <p>Main color - {{user.data.color}}</p>
+        <p>Pantone value - {{user.data.pantone_value}}</p>
+    </div>
+    <div class="card" *ngIf='result$ | async as user'>
+        <p>User ID - {{user.data.id}}</p>
+        <p>User nickname - {{user.data.name}}</p>
+        <p>Year of the execution - {{user.data.year}}</p>
+        <p>Main color - {{user.data.color}}</p>
+        <p>Pantone value - {{user.data.pantone_value}}</p>
+    </div>
+</div>
