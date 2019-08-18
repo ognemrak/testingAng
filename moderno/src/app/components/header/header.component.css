@@ -1,0 +1,30 @@
+.logo-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-opener .line {
+    display: block;
+    width: 13px;
+    height: 2px;
+    background-color: #000;
+    margin: 0 0 2px;
+}
+
+.user-settings {
+    display: flex;
+    align-items: center;
+}
+
+.user-field {
+    display: flex;
+    align-items: center;
+}
+
+.user-photo {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    overflow: hidden;
+}
