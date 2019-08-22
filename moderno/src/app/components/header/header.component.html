@@ -11,7 +11,20 @@
             </div>
         </div>
         <form action="" class="search-form">
-            <input type="search" placeholder="Search for anyting">
+          <div class="ng-autocomplete">
+            <ng-autocomplete
+              [data]="searchData"
+              [searchKeyword]="keyword"
+              [itemTemplate]="itemTemplate"
+              [notFoundTemplate]="notFoundTemplate">
+            </ng-autocomplete>
+            <ng-template #itemTemplate let-item>
+              <a [innerHTML]="item.name"></a>
+            </ng-template>
+            <ng-template #notFoundTemplate let-notFound>
+              <div [innerHTML]="'There is no such value'"></div>
+            </ng-template>
+          </div>
         </form>
         <div class="user-settings">
             <button class="btn-notification">
@@ -26,4 +39,3 @@
         </div>
     </div>
 </header>
-  
