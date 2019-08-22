@@ -7,13 +7,17 @@ import { HttpClient } from "@angular/common/http";
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  keyword = 'name';
-  searchData: {};
+  keyword: string = 'name';
+  searchData;
 
   constructor(private http: HttpClient) {}
 
   ngOnInit() {
-    this.http.get('/assets/search-data.json').subscribe((data) => this.searchData = data);
+    console.log(1);
+    console.log(this.searchData);
+    this.http.get('assets/search-data.json').subscribe((data) => this.searchData = data);
+    this.http.get('assets/search-data.json').subscribe((data) => console.log(data));
+    console.log(this.searchData, ' - Data that we received from the HTTP request');
   }
 }
 
