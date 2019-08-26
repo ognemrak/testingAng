@@ -1,0 +1,4 @@
+:host {
+  background-color: mediumvioletred;
+  transition: width .3s;
+}
