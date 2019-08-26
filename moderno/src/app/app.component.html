@@ -1,1 +1,10 @@
 <app-header></app-header>
+<main class="main">
+  <div class="container">
+    <app-sidebar (click)="sidebarStatus=!sidebarStatus"
+                 [ngClass]="sidebarStatus ? 'sidebar-opened' : 'sidebar-closed'">
+    </app-sidebar>
+    <app-dashboard></app-dashboard>
+  </div>
+</main>
+

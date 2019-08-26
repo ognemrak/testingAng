@@ -12,3 +12,11 @@
 img {
     display: block;
 }
+
+.sidebar-opened {
+  width: 40%;
+}
+
+.sidebar-closed {
+  width: 10%;
+}
